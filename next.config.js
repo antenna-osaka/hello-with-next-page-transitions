@@ -1,11 +1,11 @@
 
-const debug = process.env.NODE_ENV !== 'production'
 
-let assetPrefix="/hello-with-next-page-transitions/";
+let assetPrefix="";
 
-if(debug){
-  assetPrefix="";
+if(process.env.GITHUB_PAGES){
+  assetPrefix="/hello-with-next-page-transitions";
 }
+
 module.exports = {
   trailingSlash:true,
   assetPrefix,
