@@ -1,16 +1,16 @@
 
-
-let assetPrefix="";
+const isProd = process.env.NODE_ENV === 'production';
+let basePath="";
 
 if(process.env.GITHUB_PAGES){
-  assetPrefix="/hello-with-next-page-transitions";
+  basePath="/hello-with-next-page-transitions";
 }
 
 module.exports = {
   trailingSlash:true,
-  assetPrefix,
+  basePath,
   //参照用
   publicRuntimeConfig:{
-    assetPrefix,
+    basePath,
   }
 }
