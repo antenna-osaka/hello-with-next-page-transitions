@@ -34,7 +34,7 @@ $ npx create-next-app --example with-next-page-transitions hello-with-next-page-
 
 + .node-version によるバージョン指定
 + package.jsonにexportタスクを追記
-+ next.config.jsにdeploy先のパスを記述
++ next.config.jsにdeploy先のパスを記述、hrefもそれに連動するように変更
 + GitHub ActionsによるGitHub Pagesへの自動デプロイ
 
 GitHub Pagesへのデプロイで参考にしたサイト。
