@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Link from 'next/link'
+import { getBasePath } from '../lib/path_utils'
 
 const About = (props) => {
   const [loaded, setLoaded] = useState(false)
@@ -25,7 +26,7 @@ const About = (props) => {
         Notice how a loading spinner showed up while my content was "loading"?
         Pretty neat, huh?
       </p>
-      <Link href="/">
+      <Link href={getBasePath("/")}>
         <a className="btn btn-light">Go back home</a>
       </Link>
     </div>
