@@ -36,6 +36,7 @@ $ npx create-next-app --example with-next-page-transitions hello-with-next-page-
 + package.jsonにexportタスクを追記
 + next.config.jsにdeploy先のパスを記述、hrefもそれに連動するように変更
 + GitHub ActionsによるGitHub Pagesへの自動デプロイ
++ pageごとにpositionを定義し、Backgroundへ伝搬させる仕組みを追加。ページ遷移時にアニメーションするロジックを追加。
 
 GitHub Pagesへのデプロイで参考にしたサイト。
 [Next.jsで作ったアプリをGitHub Pagesにデプロイする](https://qiita.com/ozaki25/items/fe9912fc41c3a5c5bfea)
