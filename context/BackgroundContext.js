@@ -2,7 +2,7 @@ import React from 'react'
 
 
 const BackgroundContext = React.createContext({
-  position: { x: 0, y: 0 },
+  position: { x: null, y: null },
   updatePosition: () => { },
 
 });

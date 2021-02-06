@@ -26,7 +26,7 @@ export default class MainLayout extends React.Component{
     }
   
     this.state={
-      position:{x:0,y:0},
+      position:{x:null,y:null},
       updatePosition,
     };
 
